@@ -1,0 +1,15 @@
+{
+  "scripts": {
+    "complie": "rollup index.js --file ./output/bundle.js --format umd --name \"myBundle\"",
+    "start": "yarn complie && node ./output/bundle.js"
+  },
+  "dependencies": {
+    "rollup": "^2.0.3"
+  },
+  "name": "mazes",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:aaronkrohn/mazes.git",
+  "author": "Aaron Krohn <aaronkrohn@hotmail.com>",
+  "license": "MIT"
+}
