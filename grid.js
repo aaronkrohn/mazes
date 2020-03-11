@@ -11,11 +11,14 @@ export default class Grid {
     }
 
     toString() {
+        const WIDTH = '----'
+        const WIDTH_BLANK = '    '
+
         const buildNorthWall = () => {
             let test = ""
 
             for (let i = 0; i < this.columns; i++) {
-                test += "+---"
+                test += `+${WIDTH}`
             }
 
             return test
@@ -36,9 +39,9 @@ export default class Grid {
                 } else {
                     newCell = cell
                 }
-                let body = "   "
+                let body = WIDTH_BLANK
                 let eastBoundary = newCell.linked("east") ? " " : "|"
-                let southBoundary = newCell.linked("south") ? "   " : "---"
+                let southBoundary = newCell.linked("south") ? WIDTH_BLANK : WIDTH
 
                 top += body + eastBoundary
 
