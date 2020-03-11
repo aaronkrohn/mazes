@@ -20,10 +20,9 @@ export default class Cell {
     link(cell, bidi = true) {
         this.links[cell] = true
 
-        // if (bidi) {
-        //   this.link(cell, false);
-        // }
-        //
+        if (bidi) {
+            this.link(cell, false)
+        }
     }
 
     unlink(cell, bidi = true) {
@@ -34,9 +33,9 @@ export default class Cell {
         }
     }
 
-    // links() {
-    //   return Object.keys(this.links);
-    // }
+    links() {
+        return Object.keys(this.links)
+    }
 
     linked(side) {
         return this.links[side]
