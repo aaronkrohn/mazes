@@ -1,4 +1,5 @@
 import { randNumberTo } from "./util"
+import Cell from "./cell"
 
 export default class Grid {
     constructor(rows, columns) {
