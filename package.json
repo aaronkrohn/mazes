@@ -4,7 +4,7 @@
     "start": "yarn complie && node ./output/bundle.js"
   },
   "dependencies": {
-    "rollup": "^2.0.3"
+    "rollup": "^3.29.5"
   },
   "name": "mazes",
   "version": "1.0.0",
